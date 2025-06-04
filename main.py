@@ -22,7 +22,8 @@ async def heath():
 
 register_tortoise(
     app,
-    db_url="sqlite://db.sqlite3",
+    # db_url="sqlite://db.sqlite3",
+    db_url="asyncpg://sewup-db_owner:npg_kcr5Y6eadZsg@ep-calm-brook-a23tvlv6-pooler.eu-central-1.aws.neon.tech/sewup-db",
     modules={"models": ['models']},
     generate_schemas=True,
     add_exception_handlers=True,
